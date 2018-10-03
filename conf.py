@@ -13,7 +13,7 @@ settings_file_name = 'cie3.0-manualemiddleware-docs'
 # -- No need to change below here
 
 import sys, os
-docs_italia_theme = __import__("docs-italia-theme")
+docs_italia_theme = __import__("docs_italia_theme")
 from recommonmark.transform import AutoStructify
 from recommonmark.parser import CommonMarkParser
 
