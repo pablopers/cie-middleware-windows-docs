@@ -12,32 +12,9 @@ settings_file_name = 'cie3.0-manualemiddleware-docs'
 
 # -- No need to change below here
 
-import sys, os
-docs_italia_theme = __import__("docs-italia-theme")
-from recommonmark.transform import AutoStructify
-from recommonmark.parser import CommonMarkParser
-
-# -- RTD configuration ------------------------------------------------
-
-# on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
-on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-
-# This is used for linking and such so we link to the thing we're building
-rtd_version = os.environ.get('READTHEDOCS_VERSION', 'latest')
-if rtd_version not in ['stable', 'latest']:
-    rtd_version = 'stable'
-
-rtd_project = os.environ.get('READTHEDOCS_PROJECT', '')
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
-
-# -- General configuration -----------------------------------------------------
-
-# If your documentation needs a minimal Sphinx version, state it here.
-#needs_sphinx = '1.0'
+import sys
+import os
+docs_italia_theme = __import__("docs_italia_theme")
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
